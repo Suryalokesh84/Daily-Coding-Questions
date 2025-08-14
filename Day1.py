@@ -56,3 +56,28 @@ for i in a:
     add+=(2**length)*i
     length-=1
 print(add)
+# Example usage:
+# a = (1, 0, 1, 1)  # Represents binary 1011
+# Output: 11 (decimal equivalent of binary 1011)
+
+
+
+#dynamic progaraming fibonaci
+
+def fib(n,arr):
+    if n==0 or n==1:
+        return n
+    if arr[n]!=-1:
+        return arr[n]
+    result=fib(n-1,arr)+fib(n-2,arr)
+    arr[n]=result
+    return result
+n=5
+arr=[-1]*(n+1)
+arr[0]=0
+arr[1]=1
+print(fib(n,arr))
+print(arr)
+# Example usage:
+# n = 5 # Output: 5 (the 5th Fibonacci number)
+# arr will contain the Fibonacci sequence up to n, e.g., [0, 1
