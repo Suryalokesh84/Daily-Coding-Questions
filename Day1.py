@@ -40,3 +40,19 @@ n=int(input())
 print(digital_root(n))
 # Example usage:
 # n = 1234
+
+
+
+
+
+#2nd Question
+
+
+#Binary to decimal conversion
+a=tuple(map(int,input().split()))
+length=len(a)-1
+add=0
+for i in a:
+    add+=(2**length)*i
+    length-=1
+print(add)
