@@ -81,3 +81,25 @@ print(arr)
 # Example usage:
 # n = 5 # Output: 5 (the 5th Fibonacci number)
 # arr will contain the Fibonacci sequence up to n, e.g., [0, 1  , 1, 2, 3, 5]   
+
+#here in this way we can get the fibonacci series using dynamic programming
+
+
+# 4th Question: Palindrome Check
+# Problem Statement: Given a string, check if it is a palindrome (reads the same forwards and backwards).
+# Example:
+# Input: madam
+# Output: Yes
+# Input: hello
+# Output: No
+
+def is_palindrome(s):
+    return s == s[::-1]
+
+s = input("Enter a string to check palindrome: ")
+if is_palindrome(s):
+    print("Yes")
+else:
+    print("No")
+
+# abnbs
