@@ -80,4 +80,4 @@ print(fib(n,arr))
 print(arr)
 # Example usage:
 # n = 5 # Output: 5 (the 5th Fibonacci number)
-# arr will contain the Fibonacci sequence up to n, e.g., [0, 1
+# arr will contain the Fibonacci sequence up to n, e.g., [0, 1  , 1, 2, 3, 5]   
