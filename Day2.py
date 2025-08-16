@@ -107,3 +107,15 @@ else:
 # ● Use slicing or queue-like behavior.
 
 # ● Time complexity ≤ O(n)
+
+a=list(map(int,input().split()))
+a.sort()
+#print(a) #use this to print list
+count=0
+b=len(a)+1
+for i in a:
+    for j in range(i+1,b):
+        if ((i+j)%2==0 and i<j):
+         #   print(i,j)   #use this line to see the pairs
+            count+=1
+print(count)
