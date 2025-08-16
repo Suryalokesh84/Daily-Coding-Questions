@@ -30,3 +30,22 @@
 # ● Time Complexity ≤ O(n)
 
 # ● Use constant extra space if possible.
+
+
+a = list(map(int, input().split()))
+a.sort()
+
+List = []
+for i in a:
+    if i > 0:
+        List.append(i)
+
+if len(List) == 0:
+    print(1)  # if no positive numbers, return 1
+else:
+    b = len(List)
+    c = List[b - 1] + 2
+    for i in range(1, c):
+        if i not in List:
+            print(i)
+            break
