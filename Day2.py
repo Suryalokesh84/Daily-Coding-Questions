@@ -1,3 +1,5 @@
+# Day2.py
+
 # ✅ 1. TCS NQT (2023) – Smallest Missing Positive
 # Integer
 
@@ -49,6 +51,8 @@ else:
         if i not in List:
             print(i)
             break
+# Example usage:
+# a = [3, 4, -1, 1]
 
 
 
@@ -119,3 +123,6 @@ for i in a:
          #   print(i,j)   #use this line to see the pairs
             count+=1
 print(count)
+
+# Example usage:
+# a = [1, 2, 3, 4]
