@@ -49,3 +49,61 @@ else:
         if i not in List:
             print(i)
             break
+
+
+
+
+
+
+# ✅ 3. Wipro NLTH (2023) – Count Pairs with Even Sum
+# 🧩 Problem Statement:
+
+# Given an array of integers, count how many unique pairs (i, j) can be formed such that:
+
+# ● i < j
+
+# ● The sum of the pair is even
+
+# 📥 Input:
+
+# ● An integer array arr[]
+
+# ● Length 1 <= N <= 10^4
+
+# 📤 Output:
+
+# ● An integer representing the count of valid pairs
+
+# 📌 Example: makefile CopyEdit
+
+# Input: [1, 2, 3, 4]
+
+# Output: 2
+
+# Explanation: Even pairs are → (1, 3), (2, 4)
+
+# 🔍 Hint:
+
+# Even + Even = Even
+
+# Odd + Odd = Even
+
+# (So count number of even and odd elements separately and calculate combinations)
+
+# 📌 Example: makefile CopyEdit
+
+# Input:
+
+# arr = [1, 2, 3, 4, 5]
+
+# d = 2
+
+# Output:
+
+# [3, 4, 5, 1, 2]
+
+# 💡 Constraints:
+
+# ● Use slicing or queue-like behavior.
+
+# ● Time complexity ≤ O(n)
