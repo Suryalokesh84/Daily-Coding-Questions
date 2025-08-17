@@ -46,3 +46,21 @@ class Solution:
                 right = mid - 1
         
         return left
+
+
+
+
+
+# 📝 Question:
+
+# Write a Python program to check whether a given string is a palindrome or not.
+# (A palindrome is a word, number, or phrase that reads the same backward as forward. Example: "madam", "121".)
+
+# Input Example:
+
+# madam
+
+
+# Output Example:
+
+# Palindrome
