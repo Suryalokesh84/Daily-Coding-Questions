@@ -64,3 +64,16 @@ class Solution:
 # Output Example:
 
 # Palindrome
+
+def is_palindrome(s):
+    if s == s[::-1]:
+        return "Palindrome"
+    else:
+        return "Not Palindrome"
+
+# Example usage
+word = input("Enter a string: ")
+print(is_palindrome(word))
+
+#this is a simple function to check if a string is a palindrome by comparing it to its reverse.
+print("Yes")
