@@ -89,3 +89,15 @@ print(is_palindrome(word))
 # Output Example:
 
 # Largest number is: 99
+
+
+def find_largest(nums):
+    largest = nums[0]
+    for n in nums:
+        if n > largest:
+            largest = n
+    return largest
+
+# Example usage
+numbers = [10, 25, 4, 99, 67]
+print("Largest number is:", find_largest(numbers))
