@@ -75,5 +75,3 @@ def is_palindrome(s):
 word = input("Enter a string: ")
 print(is_palindrome(word))
 
-#this is a simple function to check if a string is a palindrome by comparing it to its reverse.
-print("Yes")
