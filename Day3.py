@@ -75,3 +75,17 @@ def is_palindrome(s):
 word = input("Enter a string: ")
 print(is_palindrome(word))
 
+
+
+# 📝 Question:
+
+# Write a Python program to find the largest number in a list without using the built-in max() function.
+
+# Input Example:
+
+# [10, 25, 4, 99, 67]
+
+
+# Output Example:
+
+# Largest number is: 99
