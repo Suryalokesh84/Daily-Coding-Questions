@@ -155,3 +155,26 @@ for _ in range(t):
 # Max problems possible in 100 minutes = 100 // 20 = 5 (out of 7 available).
 
 # 5 × 5 = 35
+
+T = int(input())   # number of test cases
+
+for _ in range(T):
+    N, X, K, M = map(int, input().split())
+
+    # Max number of problems Chef can attempt within K minutes
+    max_problems_by_time = K // M
+
+    # But Chef cannot solve more than N problems
+    problems_solved = min(N, max_problems_by_time)
+
+    # Total marks = problems solved × marks per problem
+    print(problems_solved * X)
+# ✅ Sample Run
+# Input:
+# Copy
+# Edit
+# 4
+# 5 4 15 3
+# 10 2 8 5
+# 6 10 25 4
+# 7 5 100 20
