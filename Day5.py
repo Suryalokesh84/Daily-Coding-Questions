@@ -9,7 +9,6 @@
 # In a test, there are 
 # N
 # N problems, each carrying 
-# X
 # X marks.
 # In each problem, Chef either received 
 # X
