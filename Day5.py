@@ -236,3 +236,13 @@ for _ in range(t):
 # 2 rounds as after round 
 # 2
 # 2 all Jenga tiles are used.
+
+
+
+t = int(input())
+for _ in range(t):
+    n, x = map(int, input().split())
+    if x % n == 0:
+        print("YES")
+    else:
+        print("NO")
