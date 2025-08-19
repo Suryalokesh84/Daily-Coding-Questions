@@ -290,3 +290,6 @@ class Solution:
         while num >= 10:
             num = sum(int(d) for d in str(num))
         return num
+
+# Example usage:
+# num = 38
