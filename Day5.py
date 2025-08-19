@@ -127,3 +127,13 @@
 # 5: There is no way for Chef to score exactly 
 # 36
 # 36 marks.
+t = int(input())
+for _ in range(t):
+    N, X, Y = map(int, input().split())
+    
+    if Y % X == 0 and Y // X <= N:
+        print("YES")
+    else:
+        print("NO")
+# Example usage:
+# Input: 1 8 4  
