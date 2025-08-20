@@ -90,3 +90,21 @@ class Solution:
 # 1 <= arr.length <= 300
 # 1 <= arr[0].length <= 300
 # 0 <= arr[i][j] <= 1
+
+class Solution:
+    def countSquares(self, matrix: list[list[int]]) -> int:
+        if not matrix or not matrix[0]:
+            return 0
+            
+        rows = len(matrix)
+        cols = len(matrix[0])
+        count = 0
+        
+        for i in range(rows):
+            for j in range(cols):
+                if matrix[i][j] == 1:
+                    if i > 0 and j > 0:
+                        matrix[i][j] = 1 + min(matrix[i-1][j], matrix[i][j-1], matrix[i-1][j-1])
+                    count += matrix[i][j]
+                    
+        return count
