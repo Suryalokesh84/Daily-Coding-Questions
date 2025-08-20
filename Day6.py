@@ -108,3 +108,22 @@ class Solution:
                     count += matrix[i][j]
                     
         return count
+    
+
+    # Q7. Prime Number with Comments
+  
+def is_prime_verbose(n):
+    # Prime numbers are greater than 1
+    if n <= 1:
+        return False
+    
+    # Check divisibility up to square root of n
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return False  # Found a divisor, not prime
+    
+    return True  # No divisors found, number is prime
+
+print(is_prime_verbose(29))
+# Example usage:
+# n = 29
