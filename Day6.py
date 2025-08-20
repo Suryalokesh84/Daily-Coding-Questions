@@ -125,3 +125,4 @@ def is_prime_verbose(n):
 print(is_prime_verbose(29))
 # Example usage:
 # n = 29
+# Output: True (29 is a prime number)
