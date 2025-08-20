@@ -23,3 +23,15 @@
 
 # 1 <= nums1.length, nums2.length <= 1000
 # 0 <= nums1[i], nums2[i] <= 1000
+
+
+class Solution:
+    def intersection(self, nums1: list[int], nums2: list[int]) -> list[int]:
+        set1 = set(nums1)
+        intersection_set = set()
+        
+        for num in nums2:
+            if num in set1:
+                intersection_set.add(num)
+                
+        return list(intersection_set)
