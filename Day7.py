@@ -39,3 +39,31 @@ for _ in range(T):
     # Final score is the maximum distance
     print(max(A, B, C))
 
+
+
+# ✅ Question:
+
+# You are given an m x n binary matrix mat.
+# Return the number of submatrices that contain only ones.
+
+# Input Format:
+
+# A 2D list mat of size m x n, where each element is either 0 or 1.
+
+# Output Format:
+
+# An integer representing the total number of submatrices that consist of only 1s.
+
+# Constraints:
+
+# 1 ≤ m, n ≤ 150
+
+# mat[i][j] is either 0 or 1
+
+# Example 1:
+# Input: mat = [[1,0,1],[1,1,0],[1,1,0]]
+# Output: 13
+
+# Example 2:
+# Input: mat = [[0,1,1,0],[0,1,1,1],[1,1,1,0]]
+# Output: 24
