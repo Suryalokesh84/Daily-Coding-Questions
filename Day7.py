@@ -67,3 +67,25 @@ for _ in range(T):
 # Example 2:
 # Input: mat = [[0,1,1,0],[0,1,1,1],[1,1,1,0]]
 # Output: 24
+
+from typing import List
+
+class Solution:
+    def numSubmat(self, mat: List[List[int]]) -> int:
+        m, n = len(mat), len(mat[0])
+        heights = [[0] * n for _ in range(m)]
+        for j in range(n):
+            for i in range(m):
+                if mat[i][j] == 1:
+                    heights[i][j] = heights[i-1][j] + 1 if i > 0 else 1
+        result = 0
+        for i in range(m):
+            for j in range(n):
+                if heights[i][j] > 0:
+                    h = heights[i][j]
+                    for k in range(j, -1, -1):
+                        if heights[i][k] == 0:
+                            break
+                        h = min(h, heights[i][k])
+                        result += h
+        return result
