@@ -30,3 +30,11 @@
 # 15
 # 32
 # 82
+
+# Number of test cases
+T = int(input())
+
+for _ in range(T):
+    A, B, C = map(int, input().split())
+    # Final score is the maximum distance
+    print(max(A, B, C))
