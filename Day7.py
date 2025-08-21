@@ -89,3 +89,5 @@ class Solution:
                         h = min(h, heights[i][k])
                         result += h
         return result
+# Example usage:
+# mat = [[1,0,1],[1,1,0],[1,1,0]]
