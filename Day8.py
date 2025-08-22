@@ -36,4 +36,6 @@ class Solution:
         return (max_row - min_row + 1) * (max_col - min_col + 1)
 #3195 leet code
 
-    
+
+
+    # Q4. Fibonacci Series (first n terms)
