@@ -92,3 +92,9 @@
 # 1 respectively. Because the police is already present at the location of thief, the time taken by police to catch the thief is 
 # 0
 # 0 seconds.
+
+# cook your dish here
+t=int(input())
+for i in range(t):
+    a,b=map(int,input().split())
+    print(max(a-b,b-a))
