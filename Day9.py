@@ -239,3 +239,15 @@ print(Solution().minimumSum(grid))
 
 # This problem also relates to the GCD of differences.
 # The final single element is always the GCD of all (arr[i] - arr[0]) differences.
+import math
+
+def final_element(arr):
+    n = len(arr)
+    g = 0
+    for i in range(1, n):
+        g = math.gcd(g, abs(arr[i] - arr[0]))
+    return g
+
+# Example Test
+print(final_element([5, 9, 3, 7]))  # Output: 0
+print(final_element([4, 10, 6]))    # Output: 2
