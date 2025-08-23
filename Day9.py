@@ -203,3 +203,39 @@ class Solution:
 grid = [[1,0,1],[1,1,1]]
 print(Solution().minimumSum(grid))
 
+
+
+# 🔹 Question: Consecutive Difference Array
+
+# You are given an integer array arr of size N.
+# Form a new array where each element is the absolute difference between consecutive elements of arr.
+# Repeat this process until the array reduces to a single element.
+# Return that final element.
+
+# Example 1:
+# Input: 
+# N = 4  
+# arr = [5, 9, 3, 7]  
+
+# Process:  
+# Step 1 → [ |9-5|, |3-9|, |7-3| ] = [4, 6, 4]  
+# Step 2 → [ |6-4|, |4-6| ] = [2, 2]  
+# Step 3 → [ |2-2| ] = [0]  
+
+# Output: 0
+
+# Example 2:
+# Input: 
+# N = 3  
+# arr = [4, 10, 6]  
+
+# Process:  
+# Step 1 → [ |10-4|, |6-10| ] = [6, 4]  
+# Step 2 → [ |4-6| ] = [2]  
+
+# Output: 2
+
+# 🔑 Insight:
+
+# This problem also relates to the GCD of differences.
+# The final single element is always the GCD of all (arr[i] - arr[0]) differences.
