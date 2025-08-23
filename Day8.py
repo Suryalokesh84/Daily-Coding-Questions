@@ -45,7 +45,7 @@ class Solution:
             seq.append(seq[i-1]+seq[i-2])
         return seq[:n]
 
-print(fibonacci(10))
+print(fibonacci(10)) # type: ignore
 # Example usage:
 # n = 10  # Output: [0, 1, 1, 2, 3, 5, 8, 13, 21, 34] (first 10 Fibonacci numbers)
         
