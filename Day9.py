@@ -198,7 +198,8 @@ class Solution:
 # 🔑 Hint:
 
 # This problem is actually linked to the GCD (Greatest Common Divisor) of the array.
-# The minimum possible maximum element after infinite operations is always GCD of all elements.
+# The minimum possible maximum element after infinite operations is always GCD of all elements. 
 
 grid = [[1,0,1],[1,1,1]]
 print(Solution().minimumSum(grid))
+
