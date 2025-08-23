@@ -159,7 +159,7 @@ class Solution:
 
     # Tough TCS Streak Question
 
-    
+
 # Q. Minimum Operations to Make Array Equal
 
 # You are given an array of N integers.
@@ -199,3 +199,6 @@ class Solution:
 
 # This problem is actually linked to the GCD (Greatest Common Divisor) of the array.
 # The minimum possible maximum element after infinite operations is always GCD of all elements.
+
+grid = [[1,0,1],[1,1,1]]
+print(Solution().minimumSum(grid))
