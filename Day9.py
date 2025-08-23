@@ -155,3 +155,47 @@ class Solution:
     def rotate(self, A: List[List[int]]) -> List[List[int]]:
         n, m = len(A), len(A[0])
         return [[A[i][j] for i in range(n-1, -1, -1)] for j in range(m)]
+    
+
+    # Tough TCS Streak Question
+
+    
+# Q. Minimum Operations to Make Array Equal
+
+# You are given an array of N integers.
+# In one operation, you can choose any two elements a and b and replace one of them with |a - b| (absolute difference).
+
+# Find the minimum possible value of the maximum element in the array after performing any number of operations.
+
+# Example 1:
+# Input:
+# N = 3
+# arr = [6, 10, 15]
+
+# Output:
+# 1
+
+
+# Explanation:
+
+# Choose (6, 10) → replace 10 with |6 - 10| = 4 → arr = [6, 4, 15]
+
+# Choose (6, 4) → replace 6 with |6 - 4| = 2 → arr = [2, 4, 15]
+
+# Choose (2, 4) → replace 4 with |2 - 4| = 2 → arr = [2, 2, 15]
+
+# Choose (2, 15) → replace 15 with |2 - 15| = 13 → arr = [2, 2, 13]
+# ... keep going → eventually maximum becomes 1.
+
+# Example 2:
+# Input:
+# N = 4
+# arr = [8, 12, 16, 20]
+
+# Output:
+# 4
+
+# 🔑 Hint:
+
+# This problem is actually linked to the GCD (Greatest Common Divisor) of the array.
+# The minimum possible maximum element after infinite operations is always GCD of all elements.
