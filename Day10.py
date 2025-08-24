@@ -74,3 +74,11 @@
 # 8 cards are facing down. Therefore we can flip the 
 # 2
 # 2 cards which are initially facing up
+
+def solve():
+    n, x = map(int, input().split())
+    print(min(x, n - x))
+
+t = int(input())
+for _ in range(t):
+    solve()
