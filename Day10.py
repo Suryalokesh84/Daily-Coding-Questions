@@ -85,3 +85,7 @@ def solve():
 t = int(input())
 for _ in range(t):
     solve()
+
+
+# Example usage:# Input:
+# 4
