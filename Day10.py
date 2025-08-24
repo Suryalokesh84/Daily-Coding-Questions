@@ -75,6 +75,9 @@
 # 2
 # 2 cards which are initially facing up
 
+
+# solution:--
+
 def solve():
     n, x = map(int, input().split())
     print(min(x, n - x))
