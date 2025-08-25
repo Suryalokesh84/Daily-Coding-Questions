@@ -102,3 +102,8 @@
 # 5 people can take bath. Note that 
 # 0
 # 0 litres of water would remain unused in the geyser after this.
+
+t = int(input())
+for _ in range(t):
+    x, y = map(int, input().split())
+    print(x // (2 * y))
