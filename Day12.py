@@ -156,3 +156,5 @@ class Solution:
                 max_area = area
         
         return max_area
+# Example usage:
+# dimensions = [[9,3],[8,6]]
