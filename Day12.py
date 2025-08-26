@@ -110,3 +110,5 @@ for _ in range(t):
     extra_left = max(0, n - m)
     total_extra = n + extra_left
     print(total_extra)
+# Test Case 
+# 4
