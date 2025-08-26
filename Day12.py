@@ -102,3 +102,11 @@
 # 4 more right shoes to form 
 # 4
 # 4 pairs of shoes.
+
+
+t = int(input())
+for _ in range(t):
+    n, m = map(int, input().split())
+    extra_left = max(0, n - m)
+    total_extra = n + extra_left
+    print(total_extra)
