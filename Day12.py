@@ -142,3 +142,17 @@ for _ in range(t):
         # 1 <= dimensions.length <= 100
         # dimensions[i].length == 2
         # 1 <= dimensions[i][0], dimensions[i][1] <= 100
+
+class Solution:
+    def areaOfMaxDiagonal(self, dimensions: List[List[int]]) -> int:
+        max_diag = 0
+        max_area = 0
+        
+        for l, w in dimensions:
+            diag = l*l + w*w   # diagonal squared
+            area = l * w
+            if diag > max_diag or (diag == max_diag and area > max_area):
+                max_diag = diag
+                max_area = area
+        
+        return max_area
