@@ -225,3 +225,20 @@ class Solution:
 # Output:
 
 # [1,6,2,8,7,3,9,4,12,10,5,13,11,14,15,16]
+
+from collections import defaultdict
+
+class Solution:
+    def findDiagonalOrder(self, nums: List[List[int]]) -> List[int]:
+        diagonals = defaultdict(list)
+        
+        # Step 1: Collect elements into diagonals (key = i + j)
+        for i in range(len(nums)):
+            for j in range(len(nums[i])):
+                diagonals[i + j].append(nums[i][j])
+        
+        # Step 2: Traverse diagonals in order
+        result = []
+        for key in sorted(diagonals.keys()):
+            result.extend(diagonals[key][::-1])  # reverse for bottom-to-top
+        return result
