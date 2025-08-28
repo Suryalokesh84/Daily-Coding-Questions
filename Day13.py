@@ -70,3 +70,18 @@
 # Test case 
 # 2
 # 2: Mario's initial size is normal. On eating the first mushroom, he turns huge. On eating the second mushroom, he turns small. On eating the third mushroom, he turns normal. On eating the fourth mushroom, he turns huge.
+
+
+def solve():
+    x = int(input())
+    x %= 3
+    if x == 0:
+        print("NORMAL")
+    elif x == 1:
+        print("HUGE")
+    else:
+        print("SMALL")
+
+t = int(input())
+for _ in range(t):
+    solve()
