@@ -148,3 +148,29 @@ for _ in range(t):
 # grid.length == grid[i].length == n
 # 1 <= n <= 10
 # -105 <= grid[i][j] <= 105
+
+from collections import defaultdict
+
+class Solution:
+    def sortMatrix(self, grid: List[List[int]]) -> List[List[int]]:
+        n = len(grid)
+        diagonals = defaultdict(list)
+
+        # Step 1: Collect all diagonals
+        for i in range(n):
+            for j in range(n):
+                diagonals[i - j].append(grid[i][j])
+
+        # Step 2: Sort diagonals based on their position
+        for key in diagonals:
+            if key >= 0:  # bottom-left (i >= j)
+                diagonals[key].sort(reverse=True)  # non-increasing
+            else:  # top-right (i < j)
+                diagonals[key].sort()  # non-decreasing
+
+        # Step 3: Refill the grid
+        for i in range(n):
+            for j in range(n):
+                grid[i][j] = diagonals[i - j].pop(0)
+
+        return grid
