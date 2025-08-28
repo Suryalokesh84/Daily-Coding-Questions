@@ -242,3 +242,7 @@ class Solution:
         for key in sorted(diagonals.keys()):
             result.extend(diagonals[key][::-1])  # reverse for bottom-to-top
         return result
+
+# Example usage:
+# nums = [[1,2,3],[4,5,6],[7,8,9]]
+# Output: [1,4,2,7,5,3,8,6,9]
