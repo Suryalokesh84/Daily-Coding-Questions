@@ -181,3 +181,47 @@ class Solution:
 
 # --------------------------------------------------------
 # 3rd Question  
+# 🔹 Question: Diagonal Traverse II
+
+# You are given a 2D list of integers nums, where each nums[i] is a list of integers. Return all elements of nums in diagonal order (i.e., first all elements with i + j = 0, then all with i + j = 1, etc.), traversing each diagonal from bottom to top.
+
+# Example 1
+
+# Input:
+
+# nums = [[1,2,3],
+#         [4,5,6],
+#         [7,8,9]]
+
+
+# Output:
+
+# [1,4,2,7,5,3,8,6,9]
+
+
+# Explanation:
+
+# Diagonal 0: [1]
+
+# Diagonal 1: [4,2]
+
+# Diagonal 2: [7,5,3]
+
+# Diagonal 3: [8,6]
+
+# Diagonal 4: [9]
+
+# Example 2
+
+# Input:
+
+# nums = [[1,2,3,4,5],
+#         [6,7],
+#         [8],
+#         [9,10,11],
+#         [12,13,14,15,16]]
+
+
+# Output:
+
+# [1,6,2,8,7,3,9,4,12,10,5,13,11,14,15,16]
