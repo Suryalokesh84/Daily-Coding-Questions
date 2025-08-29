@@ -160,3 +160,9 @@ for _ in range(T):
 class Solution:
     def flowerGame(self, n: int, m: int) -> int:
         return (n * m) // 2
+
+# Example usage:
+# n = 3
+# m = 2
+# Output: 3
+# Explanation: The following pairs satisfy conditions described in the statement: (1,2), (
