@@ -100,3 +100,9 @@
 # 8 seconds. So, he should fire the bullet after 
 # 4
 # 4 seconds.
+
+T = int(input())
+for _ in range(T):
+    X, Y, Z = map(int, input().split())
+    wait_time = max(0, Z - Y // X)
+    print(wait_time)
