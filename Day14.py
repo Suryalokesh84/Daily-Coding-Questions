@@ -111,3 +111,7 @@ for _ in range(T):
 # # X = 3, Y = 12, Z = 8
 # # Output: 4
 # # Explanation: The speed of the bullet is 3 pixels per frame and the goomba is 12 pixels away from Mario. Thus, it would take 4 seconds for the bullet to reach the goomba. Mario wants the bullet to reach goomba after at least 8 seconds. So, he should fire the bullet after 4 seconds.
+
+
+# ``````````````````````````````````````----------------------------------------`------------------------------------------------
+# # 2nd Question`
