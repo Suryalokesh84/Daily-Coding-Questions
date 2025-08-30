@@ -121,3 +121,15 @@
 # 19. Thus, she has to win at least 
 # 2
 # 2 games.
+
+import math
+
+T = int(input())
+for _ in range(T):
+    X, Y = map(int, input().split())
+    if X >= Y:
+        print(0)
+    else:
+        diff = Y - X
+        ans = math.ceil(diff / 8)
+        print(int(ans))
