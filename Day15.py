@@ -133,3 +133,21 @@ for _ in range(T):
         diff = Y - X
         ans = math.ceil(diff / 8)
         print(int(ans))
+# Example usage:
+# Input:
+# 4
+# 10 10
+# 10 17
+# 10 18
+# 10 19
+# Output:
+# 0
+# 1 
+# 1
+# 2
+# Explanation:
+# Test case 1: Since Alice's current rating X is already equal to her desired rating
+# Y, she doesn't need to win any game.
+# Test case 2: Alice's current rating is 10. After winning 1 game, her rating will become 10 + 8 = 18, which is greater than her desired rating of 17. Thus, she has to win at least 1 game.
+# Test case 3: Alice's current rating is 10. After winning 1 game, her rating will become 10 + 8 = 18, which is equal to her desired rating of 18. Thus, she has to win at least 1 game.
+# Test case 4: Alice's current rating is 10. After winning 1 game, her rating will become 18, which is less than her desired rating of 19. She will need to win one more game in order to make her rating 26, which is greater than 19. Thus, she has to win at least 2 games.  
