@@ -182,3 +182,42 @@ for _ in range(t):
 # board[i].length == 9
 # board[i][j] is a digit or '.'.
 # It is guaranteed that the input board has only one solution.
+
+
+class Solution:
+    def solveSudoku(self, board):
+        rows = [set() for _ in range(9)]
+        cols = [set() for _ in range(9)]
+        boxes = [set() for _ in range(9)]
+        empties = []
+        
+        for r in range(9):
+            for c in range(9):
+                if board[r][c] == '.':
+                    empties.append((r, c))
+                else:
+                    v = board[r][c]
+                    rows[r].add(v)
+                    cols[c].add(v)
+                    boxes[(r//3)*3 + c//3].add(v)
+
+        def backtrack(i=0):
+            if i == len(empties):
+                return True
+            r, c = empties[i]
+            b = (r//3)*3 + c//3
+            for ch in map(str, range(1, 10)):
+                if ch not in rows[r] and ch not in cols[c] and ch not in boxes[b]:
+                    board[r][c] = ch
+                    rows[r].add(ch)
+                    cols[c].add(ch)
+                    boxes[b].add(ch)
+                    if backtrack(i+1):
+                        return True
+                    board[r][c] = '.'
+                    rows[r].remove(ch)
+                    cols[c].remove(ch)
+                    boxes[b].remove(ch)
+            return False
+
+        backtrack()
