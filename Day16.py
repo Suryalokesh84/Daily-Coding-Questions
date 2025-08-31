@@ -123,3 +123,26 @@ for _ in range(t):
         elif char == 'G':
             complement += 'C'
     print(complement)
+# Example usage:
+# Input:
+# 4
+# 4
+# ATCG
+# 4
+# GTCC
+# 5
+# AAAAA
+# 3
+# TAC
+# Output:
+# TAGC
+# CAGG
+# TTTTT
+# ATG
+# Explanation:
+# Test case 1: Based on the rules, the complements of A, T, C
+# and G are T, A, G, and C respectively. Thus, the complementary string of the given string ATCG is TAGC.
+
+# Test case 2: Based on the rules, the complements of G, T, and C are C, A, and G respectively. Thus, the complementary string of the given string GTCC is CAGG.
+# Test case 3: Based on the rules, the complement of A is T. Thus, the complementary string of the given string AAAAA is TTTTT.
+# Test case 4: Based on the rules, the complements of T, A, and C are A, T, and G respectively. Thus, the complementary string of the given string TAC is ATG.
