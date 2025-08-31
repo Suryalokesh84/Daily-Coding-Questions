@@ -106,3 +106,20 @@
 # Test case 
 # 4
 # 4: Based on the rules, the complements of T, A, and C are A, T, and G respectively. Thus, the complementary string of the given string TAC is ATG.
+
+
+t = int(input())
+for _ in range(t):
+    n = int(input())
+    s = input()
+    complement = ''
+    for char in s:
+        if char == 'A':
+            complement += 'T'
+        elif char == 'T':
+            complement += 'A'
+        elif char == 'C':
+            complement += 'G'
+        elif char == 'G':
+            complement += 'C'
+    print(complement)
