@@ -157,3 +157,7 @@ class Solution:
             heapq.heappush(heap, (-delta(p, t), p, t))
         
         return sum(p / t for _, p, t in heap) / len(classes)
+# Example usage:
+# classes = [[1,2],[3,5],[2,2]] 
+# extraStudents = 2
+# Output: 0.78333
