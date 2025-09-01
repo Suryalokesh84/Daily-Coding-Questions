@@ -92,3 +92,11 @@
 # 3 bottles available. He can fill all these bottles completely using 
 # 3
 # 3 litres of water.
+
+def solve():
+    N, X, K = map(int, input().split())
+    print(min(N, K // X))
+
+T = int(input())
+for _ in range(T):
+    solve()
