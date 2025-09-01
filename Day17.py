@@ -161,3 +161,39 @@ class Solution:
 # classes = [[1,2],[3,5],[2,2]] 
 # extraStudents = 2
 # Output: 0.78333
+
+
+
+# ======================================================================
+# mern basics
+
+
+
+
+# Q1. What is the MERN stack?
+# A: MERN stands for MongoDB, Express.js, React.js, Node.js. It’s a full-stack JavaScript framework used to build web applications with a single language for both client-side and server-side code.
+
+# Q2. Why is MERN stack popular?
+# A:
+
+# Full-stack JavaScript (single language).
+
+# Open-source and free.
+
+# High performance due to Node.js.
+
+# Easy integration between front-end and back-end.
+
+# React allows dynamic, responsive UI.
+
+# Q3. What is Node.js and why is it used?
+# A: Node.js is a runtime environment for executing JavaScript on the server. It’s used for building scalable and fast network applications because of its non-blocking, event-driven architecture.
+
+# Q4. What is Express.js?
+# A: Express.js is a minimal web framework for Node.js. It simplifies building APIs and handling HTTP requests, routing, and middleware.
+
+# Q5. What is MongoDB?
+# A: MongoDB is a NoSQL document-oriented database that stores data in JSON-like BSON format. It’s flexible, scalable, and suitable for MERN applications.
+
+# Q6. What is React.js and why is it used?
+# A: React.js is a front-end library for building interactive user interfaces using components and virtual DOM, making UI rendering efficient.
