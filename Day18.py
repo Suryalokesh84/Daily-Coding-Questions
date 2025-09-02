@@ -110,4 +110,16 @@
 # 8
 # 8 candies and 
 # 3
-# 3 friends. Since Chef won't be able to distribute all the candies equally, Chef does not satisfy all the conditions.
+# 3 friends. Since Chef won't be able to distribute all the candies equally, Chef doe
+# 
+# s not satisfy all the conditions.
+
+# cook your dish here
+t=int(input())
+for i in range(t):
+    a,b=map(int,input().split())
+    c=a/b
+    if c%2==0:
+        print("Yes")
+    else:
+        print("No")
