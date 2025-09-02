@@ -211,3 +211,8 @@ class Solution:
                                 break
                     if ok: ans+=1
         return ans
+    
+
+# Example usage:
+# points = [[6,2],[4,4],[2,6]]
+
