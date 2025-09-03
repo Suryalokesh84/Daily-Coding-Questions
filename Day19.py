@@ -24,3 +24,11 @@
 # 3
 # 2
 # 100
+
+import math
+
+t = int(input())
+for _ in range(t):
+    n = int(input())
+    sqrt_n = int(math.sqrt(n))
+    print(sqrt_n)
