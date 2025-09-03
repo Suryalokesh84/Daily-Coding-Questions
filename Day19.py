@@ -46,3 +46,7 @@ for _ in range(t):
 # The square root of 10 is approximately 3.16, which rounds down to 3.
 # The square root of 5 is approximately 2.23, which rounds down to 2.
 # The square root of 10000 is exactly 100.  
+
+
+# ======================================================
+# leet code problem
