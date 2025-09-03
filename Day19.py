@@ -32,3 +32,13 @@ for _ in range(t):
     n = int(input())
     sqrt_n = int(math.sqrt(n))
     print(sqrt_n)
+# Example usage:
+# Input:
+# 3
+# 10
+# 5
+# 10000
+# Output:
+# 3
+# 2
+# 100
