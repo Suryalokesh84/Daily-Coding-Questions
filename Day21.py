@@ -88,3 +88,14 @@
 # Now, Chef completes the remaining 1 level: 1 x 20 = 20 minutes.
 
 # So, the total time = 60 + 8 + 60 + 8 + 20 = 156 minutes.
+
+
+# cook your dish here
+t=int(input())
+for i in range(t):
+    x,y,z=map(int,input().split())
+    
+    total_time = x * y
+    breaks = x // 3
+    total_time += breaks * z
+    print(total_time)
