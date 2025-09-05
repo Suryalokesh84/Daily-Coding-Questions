@@ -99,3 +99,11 @@ for i in range(t):
     breaks = x // 3
     total_time += breaks * z
     print(total_time)
+# Example usage:
+# Input:
+# 4
+# 2 12 10       
+# 3 12 10
+# 7 20 8
+# 24 45 15
+# Output:
