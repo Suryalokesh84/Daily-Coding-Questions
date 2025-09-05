@@ -91,14 +91,15 @@
 
 
 # cook your dish here
-t=int(input())
-for i in range(t):
-    x,y,z=map(int,input().split())
-    
-    total_time = x * y
-    breaks = x // 3
-    total_time += breaks * z
-    print(total_time)
+for i in range(int(input())):
+    X,Y,Z=map(int,input().split())
+    total_time=X*Y
+    rest=X//3
+    if X%3==0:
+        rest-=1
+        print(total_time+rest*Z)
+    else:
+        print(total_time+rest*Z)
 # Example usage:
 # Input:
 # 4
@@ -121,3 +122,4 @@ for i in range(t):
 # 3 levels, so the total time is 24 * 45 + 8 * 15 = 1185 minutes.
 
 
+# ================================================================================`
