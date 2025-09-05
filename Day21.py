@@ -111,4 +111,13 @@ for i in range(t):
 # 36
 # 156
 # 1185
+# Explanation:
+# For the first test case, Chef completes 2 levels without needing a break, so the
+# total time is 2 * 12 = 24 minutes.
+# For the second test case, Chef completes 3 levels and takes one break, so the total time is 3 * 12 + 10 = 36 minutes.
+# For the third test case, Chef completes 7 levels, taking two breaks after the first
+# 3 levels each, so the total time is 7 * 20 + 2 * 8 = 156 minutes.
+# For the fourth test case, Chef completes 24 levels, taking 8 breaks after every
+# 3 levels, so the total time is 24 * 45 + 8 * 15 = 1185 minutes.
+
 
