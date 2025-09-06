@@ -121,3 +121,14 @@ for _ in range(t):
         print(c)
     else:
         print(-1)
+
+# Example usage:
+# Input:
+# 3
+# 1 10
+# 1 5
+# 4 9
+# Output:
+# 10
+# -1
+# 8
