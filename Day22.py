@@ -234,3 +234,4 @@ class Solution:
             total_steps = calc_sum(r) - calc_sum(l-1)
             ans += (total_steps + 1) // 2
         return ans
+
