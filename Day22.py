@@ -132,3 +132,10 @@ for _ in range(t):
 # 10
 # -1
 # 8
+# Explanation:
+# In the first test case, the third number should be 10 to make the sum
+# equal to 21 (1 + 10 + 10 = 21).
+# In the second test case, there is no number between 1 and 10 that can
+# make the sum equal to 21, so the output is -1.
+# In the third test case, the third number should be 8 to make the sum
+# equal to 21 (4 + 9 + 8 = 21).
