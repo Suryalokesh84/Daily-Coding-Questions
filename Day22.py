@@ -206,3 +206,31 @@ for _ in range(t):
 # queries[i].length == 2
 # queries[i] == [l, r]
 # 1 <= l < r <= 109
+
+
+
+import math
+
+class Solution:
+    def minOperations(self, queries):
+        limits = []
+        x, steps = 1, 1
+        while x <= 10**9:
+            nxt = min(10**9, 4*x - 1)
+            limits.append((x, nxt, steps))
+            x *= 4
+            steps += 1
+
+        def calc_sum(n):
+            if n <= 0: return 0
+            res = 0
+            for lo, hi, step in limits:
+                if n < lo: break
+                res += (min(n, hi) - lo + 1) * step
+            return res
+
+        ans = 0
+        for l, r in queries:
+            total_steps = calc_sum(r) - calc_sum(l-1)
+            ans += (total_steps + 1) // 2
+        return ans
