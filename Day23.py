@@ -92,3 +92,17 @@ t = int(input())
 for _ in range(t):
     n, k, m = map(int, input().split())
     print(math.ceil(n / (k * m)))
+
+# Example usage:
+# Input:
+# 4
+# 6 2 3
+# 3 1 2
+# 8 4 1
+
+# 25 4 2
+# Output:
+# 1
+# 2
+# 2
+# 4
