@@ -106,3 +106,11 @@ for _ in range(t):
 # 2
 # 2
 # 4
+
+# Explanation:
+# Test case 1: Chef can put 3 candies in the first pocket of a bag
+# and the remaining 3 candies in the second pocket. Thus Chef will need only one bag.   
+# Test case 2: Chef can put 2 candies in the only pocket of the first bag
+# and the remaining 1 candy in the only pocket of the second bag. Thus Chef will need two bags.
+# Test case 3: Chef can put 4 candies in the first bag, one candy in each of the 4 pockets and the same for the second bag. Thus Chef will need two bags.
+# Test case 4: Chef can put 2 candies in each of the 4 pockets of three bags, one candy in a pocket of the fourth bag. Thus Chef will need four bags.
