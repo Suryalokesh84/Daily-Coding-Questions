@@ -114,3 +114,8 @@ for _ in range(t):
 # and the remaining 1 candy in the only pocket of the second bag. Thus Chef will need two bags.
 # Test case 3: Chef can put 4 candies in the first bag, one candy in each of the 4 pockets and the same for the second bag. Thus Chef will need two bags.
 # Test case 4: Chef can put 2 candies in each of the 4 pockets of three bags, one candy in a pocket of the fourth bag. Thus Chef will need four bags.
+
+
+# ========================================================
+# 2nd Question
+# leetcode problem
