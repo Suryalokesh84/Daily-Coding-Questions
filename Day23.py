@@ -85,3 +85,10 @@
 # 2 candies in each of the 
 # 4
 # 4 pockets of three bags, one candy in a pocket of the fourth bag.
+
+import math
+
+t = int(input())
+for _ in range(t):
+    n, k, m = map(int, input().split())
+    print(math.ceil(n / (k * m)))
