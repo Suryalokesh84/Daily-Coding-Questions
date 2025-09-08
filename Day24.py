@@ -128,3 +128,16 @@ for i in range(t):
     # Test case 3: Chef can make 3 moves and climb 1 step in each move to reach stair numbered 3.
     
     # Test case 4: Chef can make 2 moves and climb 1 step in each move to reach stair numbered 2.
+
+
+# ✅ 2. Factorial of a Number
+
+Iteration
+
+def factorial_iter(n):
+    result = 1
+    for i in range(1, n+1):
+        result *= i
+    return result
+
+print(factorial_iter(5))  # 120
