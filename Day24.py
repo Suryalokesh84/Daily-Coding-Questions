@@ -108,3 +108,23 @@ for i in range(t):
         print(x // y)
     else:
         print(x // y + x % y)
+    # Example usage:
+    # Input:
+    # 4
+    # 4 2
+    # 8 3
+    # 3 4
+    # 2 1
+    # Output:
+    # 2
+    # 4
+    # 3
+    # 2
+# Explanation:
+    # Test case 1: Chef can make 2 moves and climb 2 steps in each move to reach stair numbered 4.
+    
+    # Test case 2: Chef can make a minimum of 4 moves. He can climb 3 steps in 2 of those moves and 1 step each in remaining 2 moves to reach stair numbered 8.
+    
+    # Test case 3: Chef can make 3 moves and climb 1 step in each move to reach stair numbered 3.
+    
+    # Test case 4: Chef can make 2 moves and climb 1 step in each move to reach stair numbered 2.
