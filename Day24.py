@@ -129,7 +129,7 @@ for i in range(t):
     
     # Test case 4: Chef can make 2 moves and climb 1 step in each move to reach stair numbered 2.
 
-
+# ==========================            ==========================  
 # ✅ 2. Factorial of a Number
 
 Iteration
