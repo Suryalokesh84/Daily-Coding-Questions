@@ -101,3 +101,10 @@
 # 1 step in each move to reach stair numbered 
 # 2
 # 2.
+t = int(input())
+for i in range(t):
+    x, y = map(int, input().split())
+    if x % y == 0:
+        print(x // y)
+    else:
+        print(x // y + x % y)
