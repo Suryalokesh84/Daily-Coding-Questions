@@ -367,3 +367,11 @@
 # =
 # 2
 # max(∣1−3∣,∣4−3∣)=max(∣−2∣,∣1∣)=2.
+
+def solve():
+    x1, y1, x2, y2 = map(int, input().split())
+    print(max(abs(x1 - x2), abs(y1 - y2)))
+
+t = int(input())
+for _ in range(t):
+    solve()
