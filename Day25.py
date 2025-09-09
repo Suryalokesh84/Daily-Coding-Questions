@@ -418,3 +418,17 @@ for _ in range(t):
 
 # 2 <= n <= 1000
 # 1 <= delay < forget <= n
+
+class Solution:
+    def peopleAwareOfSecret(self, n: int, delay: int, forget: int) -> int:
+        mod = 10**9 + 7
+        dp = [0] * (n + 1)
+        dp[1] = 1
+        share = 0
+        for i in range(2, n + 1):
+            if i - delay >= 1:
+                share = (share + dp[i - delay]) % mod
+            if i - forget >= 1:
+                share = (share - dp[i - forget]) % mod
+            dp[i] = share
+        return sum(dp[n - forget + 1: n + 1]) % mod
