@@ -432,3 +432,5 @@ class Solution:
                 share = (share - dp[i - forget]) % mod
             dp[i] = share
         return sum(dp[n - forget + 1: n + 1]) % mod
+
+# ================================================================
