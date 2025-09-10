@@ -93,3 +93,27 @@ for _ in range(T):
 
     # =================================================================================
     # leetcode problem
+
+
+
+
+
+    class Solution:
+    def minimumTeachings(self, n: int, languages: List[List[int]], friendships: List[List[int]]) -> int:
+        know = [set(l) for l in languages]
+        need = set()
+        for u, v in friendships:
+            if know[u-1].intersection(know[v-1]): 
+                continue
+            need.add(u-1)
+            need.add(v-1)
+        if not need: 
+            return 0
+        res = float("inf")
+        for lang in range(1, n+1):
+            cnt = 0
+            for u in need:
+                if lang not in know[u]:
+                    cnt += 1
+            res = min(res, cnt)
+        return res
