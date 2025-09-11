@@ -191,3 +191,11 @@ for _ in range(t):
 
 # 1 <= nums.length <= 104
 # -231 <= nums[i] <= 231 - 1
+
+class Solution:
+    def moveZeroes(self, nums: List[int]) -> None:
+        for i in nums:
+            if i==0:
+                nums.remove(i)
+                nums.append(i)
+        return nums
