@@ -144,3 +144,13 @@
 # 12 
 # th
 #   serve of the match.
+
+t = int(input())
+for _ in range(t):
+    P, Q = map(int, input().split())
+    total_points = P + Q
+    turns = total_points // 2
+    if turns % 2 == 0:
+        print("Alice")
+    else:
+        print("Bob")
