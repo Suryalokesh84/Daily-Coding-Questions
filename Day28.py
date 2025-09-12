@@ -125,3 +125,12 @@
 # 31. Chef needs to add 
 # 1
 # 1 litre of hot water to reach the desired temperature. Since he has no hot water, he cannot reach the desired temperature.
+
+
+t = int(input())
+for _ in range(t):
+    A, B, X, Y = map(int, input().split())
+    if A - Y <= B <= A + X:
+        print("YES")
+    else:
+        print("NO")
