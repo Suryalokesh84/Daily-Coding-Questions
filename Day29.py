@@ -99,3 +99,12 @@
 # 4: Chef cannot measure 
 # 20
 # 20 units of weight using any combination of given weights.
+
+# cook your dish here
+t=int(input())
+for i in range(t):
+    a,b,c,d=map(int,input().split())
+    if a==b or a==c or a==d or a==b+c or a==c+d or a==b+d or a==b+c+d:
+        print("YES")
+    else:
+        print("NO")
