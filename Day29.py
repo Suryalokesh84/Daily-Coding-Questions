@@ -172,3 +172,9 @@ class Solution:
         max_vowel = max([freq[ch] for ch in freq if ch in vowels], default=0)
         max_consonant = max([freq[ch] for ch in freq if ch not in vowels], default=0)
         return max_vowel + max_consonant
+
+
+# Example usage:# s = "successes"
+# Output: 6 (2 for 'e' and 4 for 's')
+# s = "aeiaeia"
+# Output: 3 (3 for 'a' and 0 for consonants)
