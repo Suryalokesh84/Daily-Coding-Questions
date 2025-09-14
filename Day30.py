@@ -95,3 +95,19 @@
 # 30 MB app from the phone and then only he can install the 
 # 75
 # 75 MB app.
+
+def solve():
+    S, X, Y, Z = map(int, input().split())
+    
+    available_space = S - (X + Y)
+    
+    if available_space >= Z:
+        print(0)
+    elif X >= Z - available_space or Y >= Z - available_space:
+        print(1)
+    else:
+        print(2)
+
+T = int(input())
+for _ in range(T):
+    solve()
