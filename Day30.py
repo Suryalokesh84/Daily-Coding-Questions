@@ -115,7 +115,7 @@ for _ in range(T):
 
 
     # ========================================================================
-    class Solution:
+class Solution:
     def spellchecker(self, wordlist: List[str], queries: List[str]) -> List[str]:
         words = set(wordlist)
         lower_map = {}
@@ -148,3 +148,8 @@ for _ in range(T):
                     else:
                         res.append("")
         return res
+# Example usage:
+# wordlist = ["KiTe","kite","hare","Hare"]
+# queries = ["kite","Kite","KiTe","Hare","HARE","Hear","hear","keti","keet","keto"]
+# Output: ["kite","KiTe","KiTe","Hare","hare","","","KiTe","","KiTe"]
+# ========================================================================
