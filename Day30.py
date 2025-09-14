@@ -111,3 +111,40 @@ def solve():
 T = int(input())
 for _ in range(T):
     solve()
+
+
+
+    # ========================================================================
+    class Solution:
+    def spellchecker(self, wordlist: List[str], queries: List[str]) -> List[str]:
+        words = set(wordlist)
+        lower_map = {}
+        vowel_map = {}
+        vowels = set('aeiou')
+
+        def devowel(word):
+            return ''.join('*' if c in vowels else c for c in word)
+
+        for word in wordlist:
+            lower = word.lower()
+            if lower not in lower_map:
+                lower_map[lower] = word
+            dev = devowel(lower)
+            if dev not in vowel_map:
+                vowel_map[dev] = word
+
+        res = []
+        for q in queries:
+            if q in words:
+                res.append(q)
+            else:
+                lower = q.lower()
+                if lower in lower_map:
+                    res.append(lower_map[lower])
+                else:
+                    dev = devowel(lower)
+                    if dev in vowel_map:
+                        res.append(vowel_map[dev])
+                    else:
+                        res.append("")
+        return res
