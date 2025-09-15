@@ -218,3 +218,8 @@ for _ in range(t):
 # Test case 2: There are two episodes with indices {1, 2}. Thus, there is 1 odd-indexed episode ({1}), and 1 even-indexed episode ({2}). The total duration of the season = 1⋅A + 1⋅B = 1⋅3 + 1⋅4 = 7.
 # Test case 3: There are four episodes with indices {1, 2, 3, 4}. Thus, there are 2 odd-indexed episodes ({1, 3}), and 2 even-indexed episodes ({2, 4}). The total duration of the season = 2⋅A + 2⋅B = 2⋅20 + 2⋅30 = 100.
 # Test case 2: There is no unused memory in the phone. Chef has to first delete one of the apps from the phone and then only he can install the
+
+
+
+# ============================================================================
+# leet code problem
