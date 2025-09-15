@@ -188,3 +188,16 @@
 # =
 # 100
 # =2⋅A+2⋅B=2⋅20+2⋅30=100.
+
+def solve():
+    n, a, b = map(int, input().split())
+    
+    num_odd = (n + 1) // 2
+    num_even = n // 2
+    
+    total_duration = num_odd * b + num_even * a
+    print(total_duration)
+
+t = int(input())
+for _ in range(t):
+    solve()
