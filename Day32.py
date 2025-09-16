@@ -111,3 +111,21 @@ for _ in range(t):
         tens = x // 10
         fives = (x % 10) // 5
         print(tens + fives)
+# Example usage:
+# Input:
+# 3
+# 50
+# 15
+# 8
+# Output:
+# 5
+# 2
+# -1
+# Explanation:
+# Test Case 1: Chef would require at least 5 coins to pay 50 rupees.
+# All these coins would be of rupees 10.
+# Test Case 2: Chef would require at least 2 coins to pay 15 rupees. Out of these, 1 coin would be of rupees 10 and 1 coin would be of rupees 5.
+# Test Case 3: Chef cannot pay exactly 8 rupees in denominations of rupees 5 and 10 only.
+
+
+# =======================================================================================
