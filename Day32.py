@@ -101,3 +101,13 @@
 # 5 and 
 # 10
 # 10 only.
+
+t = int(input())
+for _ in range(t):
+    x = int(input())
+    if x % 5 != 0:
+        print(-1)
+    else:
+        tens = x // 10
+        fives = (x % 10) // 5
+        print(tens + fives)
