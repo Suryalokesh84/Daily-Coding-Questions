@@ -195,3 +195,4 @@ class Solution:
                 num = lcm(stack.pop(), num)
             stack.append(num)
         return stack
+
