@@ -172,3 +172,36 @@ for _ in range(t):
 # 0 <= newPriority <= 109
 # At most 2 * 105 calls will be made in total to add, edit, rmv, and execTop methods.
 # The input is generated such that taskId will be valid.
+
+
+import heapq
+
+class TaskManager:
+    def __init__(self, tasks: list[list[int]]):
+        self.task_map = {}
+        self.heap = []
+        for userId, taskId, priority in tasks:
+            self.add(userId, taskId, priority)
+
+    def add(self, userId: int, taskId: int, priority: int) -> None:
+        self.task_map[taskId] = (userId, priority)
+        heapq.heappush(self.heap, (-priority, -taskId, taskId))
+
+    def edit(self, taskId: int, newPriority: int) -> None:
+        userId, _ = self.task_map[taskId]
+        self.task_map[taskId] = (userId, newPriority)
+        heapq.heappush(self.heap, (-newPriority, -taskId, taskId))
+
+    def rmv(self, taskId: int) -> None:
+        if taskId in self.task_map:
+            del self.task_map[taskId]
+
+    def execTop(self) -> int:
+        while self.heap:
+            priority, neg_taskId, taskId = heapq.heappop(self.heap)
+            if taskId in self.task_map:
+                userId, curPriority = self.task_map[taskId]
+                if -priority == curPriority:
+                    del self.task_map[taskId]
+                    return userId
+        return -1
