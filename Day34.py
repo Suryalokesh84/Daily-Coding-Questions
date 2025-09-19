@@ -124,3 +124,32 @@ for _ in range(T):
 
 # ========================================================================================
 # leetcode problem
+class Spreadsheet:
+
+    def __init__(self, rows: int):
+        self.rows = rows
+        self.cols = 26
+        self.grid = [[0] * self.cols for _ in range(rows)]
+
+    def setCell(self, cell: str, value: int) -> None:
+        col, row = cell[0], int(cell[1:]) - 1
+        c = ord(col) - ord('A')
+        self.grid[row][c] = value
+
+    def resetCell(self, cell: str) -> None:
+        col, row = cell[0], int(cell[1:]) - 1
+        c = ord(col) - ord('A')
+        self.grid[row][c] = 0
+
+    def getValue(self, formula: str) -> int:
+        formula = formula[1:]
+        x, y = formula.split('+')
+        return self._getOperandValue(x) + self._getOperandValue(y)
+
+    def _getOperandValue(self, op: str) -> int:
+        if op[0].isalpha():
+            col, row = op[0], int(op[1:]) - 1
+            c = ord(col) - ord('A')
+            return self.grid[row][c]
+        else:
+            return int(op)
