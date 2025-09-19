@@ -92,3 +92,16 @@
 # 245 passengers. They already have 
 # 8
 # 8, so there's no need to purchase any more.
+
+
+def solve():
+    X, N = map(int, input().split())
+    
+    needed_planes = (N + 99) // 100  # Calculate total planes needed
+    
+    ans = max(0, needed_planes - X) # Find the difference between needed and owned
+    print(ans)
+
+T = int(input())
+for _ in range(T):
+    solve()
