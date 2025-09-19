@@ -105,3 +105,12 @@ def solve():
 T = int(input())
 for _ in range(T):
     solve()
+
+# Example usage:
+# Input:    
+# 3
+# 4 600
+# 3 523
+# 8 245
+# Output:
+# 2
