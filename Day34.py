@@ -114,3 +114,8 @@ for _ in range(T):
 # 8 245
 # Output:
 # 2
+
+# Explanation:
+# Test case 1: The airline needs at least 6 planes to carry 600 passengers. They already have 4, so they must purchase 2 more.      
+# Test case 2: The airline needs at least 6 planes to carry 523 passengers. They already have 3, so they must purchase 3 more.
+# Test case 3: The airline needs at least 3 planes to carry 245 passengers. They already have 8, so there's no need to purchase any more.
