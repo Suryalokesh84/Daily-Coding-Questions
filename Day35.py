@@ -147,3 +147,14 @@
 # 35 is eligible for the training. Hence the answer is 
 # 1
 # 1.
+
+
+t = int(input())
+for _ in range(t):
+    n = int(input())
+    ages = list(map(int, input().split()))
+    count = 0
+    for age in ages:
+        if 10 <= age <= 60:
+            count += 1
+    print(count)
