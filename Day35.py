@@ -158,3 +158,7 @@ for _ in range(t):
         if 10 <= age <= 60:
             count += 1
     print(count)
+
+
+explanation:
+# The code reads the number of test cases and for each test case, it reads the number       
