@@ -164,3 +164,53 @@ explanation:
 # The code reads the number of test cases and for each test case, it reads the number       
 # =========================================================================
 # leet code problem   
+
+
+
+
+
+
+
+
+
+
+from collections import deque, defaultdict
+from sortedcontainers import SortedList
+
+class Router:
+    def __init__(self, memoryLimit: int):
+        self.memoryLimit = memoryLimit
+        self.queue = deque()  # Stores packets in FIFO order
+        self.packet_set = set()  # To check duplicates: (source, destination, timestamp)
+        self.dest_map = defaultdict(SortedList)  # destination -> SortedList of timestamps
+
+    def addPacket(self, source: int, destination: int, timestamp: int) -> bool:
+        key = (source, destination, timestamp)
+        if key in self.packet_set:
+            return False  # Duplicate
+
+        # Remove oldest if memory is full
+        if len(self.queue) == self.memoryLimit:
+            old_src, old_dst, old_time = self.queue.popleft()
+            self.packet_set.remove((old_src, old_dst, old_time))
+            self.dest_map[old_dst].remove(old_time)
+
+        # Add new packet
+        self.queue.append((source, destination, timestamp))
+        self.packet_set.add(key)
+        self.dest_map[destination].add(timestamp)
+        return True
+
+    def forwardPacket(self) -> list[int]:
+        if not self.queue:
+            return []
+        src, dst, time = self.queue.popleft()
+        self.packet_set.remove((src, dst, time))
+        self.dest_map[dst].remove(time)
+        return [src, dst, time]
+
+    def getCount(self, destination: int, startTime: int, endTime: int) -> int:
+        timestamps = self.dest_map.get(destination, SortedList())
+        left = timestamps.bisect_left(startTime)
+        right = timestamps.bisect_right(endTime)
+        return right - left
