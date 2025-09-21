@@ -73,3 +73,15 @@
 # 2, which is more than the maximum allowed difference of 
 # 1
 # 1.
+
+
+def solve():
+    X, Y, D = map(int, input().split())
+    if abs(X - Y) <= D:
+        print("YES")
+    else:
+        print("NO")
+
+T = int(input())
+for _ in range(T):
+    solve()
