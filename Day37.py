@@ -32,7 +32,7 @@ A = list(map(int, input().split()))
 output = compute_difference(N, A)
 print(*output)
 # ======================================================================================================================
-
+# code chef problem
 # Too many Floors
 # Chef and Chefina are residing in a hotel.
 
