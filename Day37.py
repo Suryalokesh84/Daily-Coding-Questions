@@ -16,3 +16,18 @@
 # For example: Test 
 # Input Result Sample Test Case 1 5 5 4 3 2 1 4 2 0 2 4 
 # Sample Test Case 2 5 00000 1 2 3 4 5
+
+
+def compute_difference(N, A):
+    result = []
+    for i in range(N):
+        left_greater = sum(1 for j in range(i) if A[j] > A[i])
+        right_lesser = sum(1 for j in range(i+1, N) if A[j] < A[i])
+        result.append(abs(left_greater - right_lesser))
+    return result
+
+N = int(input())
+A = list(map(int, input().split()))
+
+output = compute_difference(N, A)
+print(*output)
