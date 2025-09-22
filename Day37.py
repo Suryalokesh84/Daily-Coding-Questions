@@ -211,3 +211,17 @@ print(*output)
 #   floor, Chef needs to go down 
 # 1
 # 1 floors to reach Chefina's Room.
+
+
+
+import math
+
+def solve():
+    X, Y = map(int, input().split())
+    floor_x = math.ceil(X / 10)
+    floor_y = math.ceil(Y / 10)
+    print(abs(floor_x - floor_y))
+
+T = int(input())
+for _ in range(T):
+    solve()
