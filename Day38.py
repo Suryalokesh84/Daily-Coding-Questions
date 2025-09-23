@@ -43,3 +43,39 @@
  
 # 1
 # ​
+
+class DSU:
+    def __init__(self, n):
+        self.parent = list(range(n))
+
+    def find(self, x):
+        if self.parent[x] != x:
+            self.parent[x] = self.find(self.parent[x])
+        return self.parent[x]
+
+    def union(self, x, y):
+        xr = self.find(x)
+        yr = self.find(y)
+        if xr != yr:
+            self.parent[yr] = xr
+            return True
+        return False
+
+# Input reading
+n, m = map(int, input().split())
+edges = []
+
+for _ in range(m):
+    u, v, w = map(int, input().split())
+    edges.append((w, u, v))
+
+# Kruskal's algorithm
+edges.sort()
+dsu = DSU(n)
+mst_weight = 0
+
+for w, u, v in edges:
+    if dsu.union(u, v):
+        mst_weight += w
+
+print(f"MST weight = {mst_weight}")
