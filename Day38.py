@@ -265,3 +265,20 @@ for _ in range(T):
 # All the given revisions in version1 and version2 can be stored in a 32-bit integer.
 
 
+class Solution:
+    def compareVersion(self, version1: str, version2: str) -> int:
+        v1 = list(map(int, version1.split('.')))
+        v2 = list(map(int, version2.split('.')))
+        
+        max_len = max(len(v1), len(v2))
+        
+        # Pad the shorter version with zeros
+        v1 += [0] * (max_len - len(v1))
+        v2 += [0] * (max_len - len(v2))
+        
+        for a, b in zip(v1, v2):
+            if a < b:
+                return -1
+            elif a > b:
+                return 1
+        return 0
