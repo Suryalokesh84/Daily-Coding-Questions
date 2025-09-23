@@ -180,3 +180,21 @@ print(f"MST weight = {mst_weight}")
 # 1 hour and Bob travels only a distance of 
 # 1
 # 1 km in the same time, ALICE is faster.
+
+
+def solve():
+    A, X, B, Y = map(int, input().split())
+    
+    alice_speed = A / X
+    bob_speed = B / Y
+    
+    if alice_speed > bob_speed:
+        print("ALICE")
+    elif bob_speed > alice_speed:
+        print("BOB")
+    else:
+        print("EQUAL")
+
+T = int(input())
+for _ in range(T):
+    solve()
