@@ -117,7 +117,7 @@ else:
 
 
 
-    class Solution:
+class Solution:
     def fractionToDecimal(self, numerator: int, denominator: int) -> str:
         if numerator == 0:
             return "0"
