@@ -36,3 +36,10 @@
 # 4
 # Explanation:
 # Since 5 is not divisible by 4 hence, its value is decreased by 1.
+
+n = int(input())
+
+if n % 4 == 0:
+    print(n + 1)
+else:
+    print(n - 1)
