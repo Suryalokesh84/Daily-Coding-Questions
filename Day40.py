@@ -431,5 +431,12 @@ class Solution:
             for i in range(len(triangle[row])):
                 dp[i] = triangle[row][i] + min(dp[i], dp[i + 1])
         return dp[0]
+    
+
+    # ⏱️ Time & Space Complexity
+
+# Time: O(n²) — we process each number once
+
+# Space: O(n) — we use one list (dp) the size of the last row
 
 # ==============================================================================================
