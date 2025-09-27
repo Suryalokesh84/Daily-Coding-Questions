@@ -35,3 +35,6 @@ def solve():
 T = int(input())
 for _ in range(T):
     solve()
+
+
+    
