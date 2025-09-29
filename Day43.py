@@ -162,3 +162,15 @@
 #  =180 
 # ∘
 #  .
+
+
+def solve():
+    a, b, c, d = map(int, input().split())
+    if a + c == 180 or b + d == 180:
+        print("YES")
+    else:
+        print("NO")
+
+t = int(input())
+for _ in range(t):
+    solve()
