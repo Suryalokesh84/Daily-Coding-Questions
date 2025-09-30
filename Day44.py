@@ -59,3 +59,14 @@
 # 10 items in the first and second polybag each and fit the remaining 
 # 4
 # 4 items in the third polybag.
+
+
+
+
+def solve():
+    n = int(input())
+    print((n + 9) // 10)
+
+t = int(input())
+for _ in range(t):
+    solve()
