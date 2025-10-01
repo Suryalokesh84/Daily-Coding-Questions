@@ -85,3 +85,17 @@ class Solution:
 # 0 <= strs[i].length <= 200
 # strs[i] consists of only lowercase English letters if it is non-empty.
  
+
+
+
+class Solution:
+    def longestCommonPrefix(self, strs: list[str]) -> str:
+        if not strs:
+            return ""
+        prefix = strs[0]
+        for s in strs[1:]:
+            while not s.startswith(prefix):
+                prefix = prefix[:-1]
+                if not prefix:
+                    return ""
+        return prefix
